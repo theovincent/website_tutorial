@@ -6,7 +6,7 @@ Small website to show how to use Dash.
 ### 1. Fork the reposity
 ### 2. Understand the website structure
 ### 3. Build the package in editable mode with the development requirements
-### 4. Configure the aws cli
+### 4. Configure the aws cli and add your credentials
 ### 5. Add an extra page on the website showing the score
 ### 6. Publish the website online with Google Cloud Run
 
