@@ -16,7 +16,7 @@ def get_server():
 
 def launch_local_website():
     add_layout(APP)
-    APP.run_server(debug=True, port=8080)
+    APP.run_server(debug=True, port=8090)
 
 
 def add_layout(app):
