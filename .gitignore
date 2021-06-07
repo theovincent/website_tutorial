@@ -131,3 +131,5 @@ dmypy.json
 
 # Avoid pushing data
 /data/**.npy
+/data/**.csv
+/data/**.feather

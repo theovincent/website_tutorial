@@ -4,6 +4,7 @@ from botocore.client import Config
 import os
 from io import BytesIO
 import numpy as np
+import pandas as pd
 
 
 AWS_BUCKET_NAME = "age-prediction-site"
@@ -18,3 +19,8 @@ CLIENT = client(
 def load_npy(key_in_bucket):
     obj = CLIENT.get_object(Bucket=AWS_BUCKET_NAME, Key=key_in_bucket)
     return np.load(BytesIO(obj["Body"].read()))
+
+
+def load_feather(key_in_bucket, **kwargs):
+    obj = CLIENT.get_object(Bucket=AWS_BUCKET_NAME, Key=key_in_bucket)
+    return pd.read_feather(BytesIO(obj["Body"].read()), **kwargs)

@@ -20,6 +20,7 @@ setup(
         "boto3",
         "matplotlib",
         "pyarrow",
+        "nbformat",
     ],
     extras_require={
         "dev": ["tqdm", "openpyxl", "ipykernel", "black", "pyyaml"],
