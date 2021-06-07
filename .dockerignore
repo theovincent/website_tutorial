@@ -1,0 +1,15 @@
+__pycache__/
+env*/
+*.egg-info/
+.devcontainer
+.vscode
+.gitignore
+.gcloudignore
+.dockerignore
+.github
+README.md
+Dockerfile
+
+# Local specific
+/change_format
+/data

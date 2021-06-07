@@ -20,10 +20,9 @@ setup(
         "boto3",
         "matplotlib",
         "pyarrow",
-        "nbformat",
     ],
     extras_require={
-        "dev": ["tqdm", "openpyxl", "ipykernel", "black", "pyyaml"],
+        "dev": ["tqdm", "openpyxl", "ipykernel", "black", "pyyaml", "nbformat"],
     },
     entry_points={"console_scripts": ["launch_local_website=dash_website.index:launch_local_website"]},
 )
